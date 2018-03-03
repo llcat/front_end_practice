@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/alumni/alumni",
+    "pages/search/search",
+    "pages/tree/tree",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c2d1f2",
+    "navigationBarTitleText": "校友录",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#c2d1f2",
+    "list": [
+      {
+        "pagePath": "pages/alumni/alumni",
+        "text": "校友录",
+        "iconPath": "/res/icon/contacts01_bfbfbf.png",
+        "selectedIconPath": "/res/icon/contacts01_c2d1f2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/res/icon/search02_bfbfbf.png",
+        "selectedIconPath": "/res/icon/search02_c2d1f2.png"
+      },
+      {
+        "pagePath": "pages/tree/tree",
+        "text": "友谊树",
+        "iconPath": "/res/icon/tree01_bfbfbf.png",
+        "selectedIconPath": "/res/icon/tree01_c2d1f2.png"
+      }
+    ]
+  }
+}
