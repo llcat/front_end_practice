@@ -15,6 +15,7 @@
 import xlrd
 import re
 import json
+from pypinyin import pinyin
 
 
 def read_table(file_name, index=0):
@@ -66,7 +67,8 @@ def convert_to_json(work_table, start_index=None, file_name=None, template=None)
 
             template['mail'] = work_table.cell(ri, 5).value
             template['address'] = work_table.cell(ri, 6).value
-
+            template['sex'] = get_sex(template['id'])
+            template['start_letter'] = get_start_letter(template['name'][:1]).upper()
             info_list.append(template.copy())
 
     # 写入json文件
@@ -74,6 +76,41 @@ def convert_to_json(work_table, start_index=None, file_name=None, template=None)
         print(info_list)
         json.dump(info_list, json_alumni, ensure_ascii=False)
 
+
+def get_sex(alumni_id):
+    # 因为提供的源文件中没有性别信息,所以只能人肉辨别呢
+    man_filter = [1, 2, 3, 4, 5,
+                  7, 8, 13, 16, 18,
+                  20, 21, 22, 23, 24,
+                  25, 26, 29, 30, 32,
+                  33, 34, 35, 39, 41,
+                  42, 43, 44, 45, 46,
+                  47, 48, 49, 52, 54,
+                  57, 59, 60, 61, 63,
+                  67]
+    woman_filter = [6, 9, 10, 11, 12,
+                    14, 15, 17, 19, 27,
+                    28, 31, 36, 37, 38,
+                    40, 50, 51, 53, 55,
+                    56, 58, 62, 64, 65,
+                    66, 68, 69
+                    ]
+    total = man_filter+woman_filter
+    total.sort()
+    for i in range(1, 70):
+        if total[i-1] != i:
+            return "Check Total List"
+
+    if alumni_id in man_filter:
+        return "man"
+    elif alumni_id in woman_filter:
+        return "woman"
+    else:
+        return "unknown"
+
+
+def get_start_letter(name):
+    return pinyin(name)[0][0][:1]
 
 if __name__ == "__main__":
     t = read_table("alumni.xls")
@@ -89,3 +126,4 @@ if __name__ == "__main__":
         "start_letter": "",
     }
     convert_to_json(t, (2, 0), "alumni.json", info_template)
+    print(get_sex(40))

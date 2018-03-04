@@ -1,2 +1,5 @@
 <!--pages/alumni/alumni.wxml-->
-<text>pages/alumni/alumni.wxml</text>
+<view class="user-info-container">
+  <text class="greeting">Hi{{userInfo}}</text>
+  <image src='https://raw.githubusercontent.com/llcat/llcat.github.io/master/resume/img/1.jpg'></image>
+</view>
