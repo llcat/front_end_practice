@@ -10,7 +10,7 @@
     "qq": "765318683",
     "mail": "ding.chi@ufl.edu",
     "address": "鄂州市凤凰路嘉禾上城",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "D"
   },
   {
@@ -23,7 +23,7 @@
     "qq": "656038114",
     "mail": "656038114@qq.com",
     "address": "海口市美兰区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "M"
   },
   {
@@ -34,7 +34,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "W"
   },
   {
@@ -47,7 +47,7 @@
     "qq": "707930937",
     "mail": "707930937@qq.com",
     "address": "武汉市武汉理工大学马房山校区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "W"
   },
   {
@@ -60,7 +60,7 @@
     "qq": "1187223665",
     "mail": "1187223665@qq.com",
     "address": "武汉市洪山区南李路湖北工业大学",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "W"
   },
   {
@@ -73,7 +73,7 @@
     "qq": "302958865",
     "mail": "302958865@qq.com",
     "address": "深圳南山区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "W"
   },
   {
@@ -86,7 +86,7 @@
     "qq": "330946783",
     "mail": "330946783@qq.com",
     "address": "武汉市硚口区27/34号",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "W"
   },
   {
@@ -99,7 +99,7 @@
     "qq": "857060023",
     "mail": "857060023@qq.com",
     "address": "湖北省黄冈市黄州区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "W"
   },
   {
@@ -112,7 +112,7 @@
     "qq": "1294143816",
     "mail": "1294143816@qq.com",
     "address": "上海市浦东新区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "W"
   },
   {
@@ -125,7 +125,7 @@
     "qq": "1126955765",
     "mail": "1126955765@qq.com",
     "address": "上海市宝山区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "W"
   },
   {
@@ -138,7 +138,7 @@
     "qq": "704426705",
     "mail": "704426705@qq.com",
     "address": "湖北省鄂州市泽林镇桐城小区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "W"
   },
   {
@@ -151,7 +151,7 @@
     "qq": "489309092",
     "mail": "yss0306@163.com",
     "address": "厦门市湖里区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "Y"
   },
   {
@@ -162,7 +162,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Y"
   },
   {
@@ -173,7 +173,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "D"
   },
   {
@@ -184,7 +184,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "L"
   },
   {
@@ -197,7 +197,7 @@
     "qq": "1294532836",
     "mail": "1294532836@qq.com",
     "address": "武汉市洪山区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Y"
   },
   {
@@ -210,7 +210,7 @@
     "qq": "1003823023",
     "mail": "1003823023@qq.com",
     "address": "湖南省长沙市岳麓区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "B"
   },
   {
@@ -223,7 +223,7 @@
     "qq": "635617254",
     "mail": "jiancheng_lv@126.com",
     "address": "重庆沙坪坝",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "L"
   },
   {
@@ -236,7 +236,7 @@
     "qq": "735953580",
     "mail": "lvlisha620@163.com",
     "address": "湖北省武汉市",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "L"
   },
   {
@@ -247,7 +247,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "L"
   },
   {
@@ -261,7 +261,7 @@
     "qq": "1251657481",
     "mail": "1251657481@qq.com",
     "address": "宁波市北仑区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "L"
   },
   {
@@ -274,7 +274,7 @@
     "qq": "1297376951",
     "mail": "1297376951@qq.com",
     "address": "武汉市青山区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Z"
   },
   {
@@ -287,7 +287,7 @@
     "qq": "277830929",
     "mail": "277830929@qq.com",
     "address": "湖北黄石",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "L"
   },
   {
@@ -298,7 +298,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "R"
   },
   {
@@ -309,7 +309,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "S"
   },
   {
@@ -322,7 +322,7 @@
     "qq": "1033961495",
     "mail": "1033961495@qq.com",
     "address": "武汉市江夏区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "S"
   },
   {
@@ -335,7 +335,7 @@
     "qq": "610486032",
     "mail": "lijin4276@163.com",
     "address": "武汉市东西湖区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "L"
   },
   {
@@ -348,7 +348,7 @@
     "qq": "1599205594",
     "mail": "18272164528@163.com",
     "address": "广州市天河区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "L"
   },
   {
@@ -361,7 +361,7 @@
     "qq": "1972179664",
     "mail": "492735036@qq.com",
     "address": "武汉市武昌区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "L"
   },
   {
@@ -375,7 +375,7 @@
     "qq": "1097448138",
     "mail": "18271920993@163.com",
     "address": "上海市浦东新区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "W"
   },
   {
@@ -386,7 +386,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "Y"
   },
   {
@@ -400,7 +400,7 @@
     "qq": "503273361",
     "mail": "15629128667@163.com",
     "address": "武汉市江夏区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Y"
   },
   {
@@ -411,7 +411,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Z"
   },
   {
@@ -422,7 +422,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Z"
   },
   {
@@ -433,7 +433,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Z"
   },
   {
@@ -444,7 +444,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "Z"
   },
   {
@@ -455,7 +455,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "Z"
   },
   {
@@ -468,7 +468,7 @@
     "qq": "903764268",
     "mail": "903764268@qq.com",
     "address": "武汉市洪山区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "C"
   },
   {
@@ -481,7 +481,7 @@
     "qq": "516194413",
     "mail": "516194413@qq.com",
     "address": "广州番禺区大学城",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "C"
   },
   {
@@ -494,7 +494,7 @@
     "qq": "1550503347",
     "mail": "1550503347@qq.com",
     "address": "武汉市东西湖区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "C"
   },
   {
@@ -505,7 +505,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Y"
   },
   {
@@ -518,7 +518,7 @@
     "qq": "328209136",
     "mail": "328209136@qq.com",
     "address": "湖北武汉",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Z"
   },
   {
@@ -529,7 +529,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Z"
   },
   {
@@ -542,7 +542,7 @@
     "qq": "1448445779",
     "mail": "1448445779@qq.com",
     "address": "黄冈市黄州区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Z"
   },
   {
@@ -555,7 +555,7 @@
     "qq": "472207075",
     "mail": "472207075@qq.com",
     "address": "武汉市武昌区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "H"
   },
   {
@@ -568,7 +568,7 @@
     "qq": "76740834",
     "mail": "76740834@qq.com",
     "address": "广东省佛山市顺德区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "H"
   },
   {
@@ -579,7 +579,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "J"
   },
   {
@@ -592,7 +592,7 @@
     "qq": "1952332458",
     "mail": "1952332458@qq.com",
     "address": "湖北黄冈",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "Y"
   },
   {
@@ -605,7 +605,7 @@
     "qq": "1026185745",
     "mail": "1026185745@qq.com",
     "address": "福建厦门",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "G"
   },
   {
@@ -618,7 +618,7 @@
     "qq": "498583233",
     "mail": "498583233@qq.com",
     "address": "北京",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "N"
   },
   {
@@ -631,7 +631,7 @@
     "qq": "1679257099",
     "mail": "1679257099@qq.com",
     "address": "鄂州市梁子湖区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "X"
   },
   {
@@ -645,7 +645,7 @@
     "qq": "823936410",
     "mail": "823936410@qq.com",
     "address": "黄州区西湖一路21号",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "H"
   },
   {
@@ -658,7 +658,7 @@
     "qq": "1084566658",
     "mail": "1084566658@qq.com",
     "address": "陕西西安",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "H"
   },
   {
@@ -671,7 +671,7 @@
     "qq": "513418248",
     "mail": "513418248@qq.com",
     "address": "武汉市武昌区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "H"
   },
   {
@@ -684,7 +684,7 @@
     "qq": "591230761",
     "mail": "591230761@qq.com",
     "address": "黄州区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "M"
   },
   {
@@ -697,7 +697,7 @@
     "qq": "1053309930",
     "mail": "1053309930@qq.com",
     "address": "上海",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "C"
   },
   {
@@ -710,7 +710,7 @@
     "qq": "604180090",
     "mail": "604180090@qq.com",
     "address": "工作未定",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "C"
   },
   {
@@ -721,7 +721,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "L"
   },
   {
@@ -732,7 +732,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "T"
   },
   {
@@ -745,7 +745,7 @@
     "qq": "1942778174",
     "mail": "1942778174@qq.com",
     "address": "武汉市江汉区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "T"
   },
   {
@@ -756,7 +756,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "T"
   },
   {
@@ -770,7 +770,7 @@
     "qq": "1959780676",
     "mail": "1959780676@qq.com",
     "address": "贵州省贵阳市",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "T"
   },
   {
@@ -783,7 +783,7 @@
     "qq": "574717160",
     "mail": "574717160@qq.com",
     "address": "广州市黄埔区",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "X"
   },
   {
@@ -796,7 +796,7 @@
     "qq": "827277031",
     "mail": "827277031@qq.com",
     "address": "黄冈市黄州区",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "X"
   },
   {
@@ -807,7 +807,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "Z"
   },
   {
@@ -820,7 +820,7 @@
     "qq": "1790311371",
     "mail": "1790311371@qq.com",
     "address": "四川成都",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "L"
   },
   {
@@ -831,7 +831,7 @@
     "qq": "",
     "mail": "",
     "address": "",
-    "sex": "man",
+    "gender": 0,
     "start_letter": "D"
   },
   {
@@ -844,7 +844,7 @@
     "qq": "",
     "mail": "1627790972@qq.com",
     "address": "地址深圳市",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "L"
   },
   {
@@ -857,7 +857,7 @@
     "qq": "957503795",
     "mail": "957503795@qq.com",
     "address": "英山",
-    "sex": "woman",
+    "gender": 1,
     "start_letter": "Z"
   }
 ]

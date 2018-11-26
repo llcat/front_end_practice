@@ -1,0 +1,53 @@
+<!--pages/alumni/alumni.wxml-->
+<view class="user-info-container">
+    <!-- 欢迎语 -->
+    <view class='welcome-container'>
+      <text class='welcome-info'>Hi,{{userInfo.nickName}}</text>
+      <text class='guide-info'>有想要联系的老友吗？</text>
+    </view>
+    <!-- 用户信息入口  -->
+    <view class='user-info'>
+      <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+      <text class='user-nickname'>我的信息</text>
+    </view>
+</view>
+<template name='alumni-info'>
+  <view class='alumni-simple-info' bindtap='showDetailMsg' data-id='{{id}}'>
+    <image wx:if="{{gender==0}}" class='alumni-avatar' src='../../res/icon/boy01.png'>
+    </image>
+    <image wx:elif="{{gender==1}}" class='alumni-avatar' src='../../res/icon/girl01.png'>
+    </image>
+    <view class="name-info-container">
+      <text class='alumni-name'>{{name}}</text>
+      <text class='alumni-description'>{{address}}</text>
+    </view>
+  </view>
+</template>
+
+<view class='info-list-container' hidden='{{hideAlumniInfoList}}'>
+  <scroll-view class='alumni-info-list' scroll-y="{{true}}" scroll-into-view="{{toView}}">
+    <block wx:for="{{dividedAlumniInfoList}}" wx:for-item="group">
+      <text id="index-{{group.indexLetter}}" class='group-index-letter'>{{group.indexLetter}}</text>
+      <block wx:for="{{group.data}}" wx:for-item="alumni">
+        <template is="alumni-info" data="{{...alumni}}"/>
+      </block>
+    </block>
+  </scroll-view>
+  <view class='letter-selector-container'>
+    <block wx:for="{{letterList}}" wx:for-item="letter">
+      <text id="letter-{{letter}}" data-letter="{{letter}}" class='letter' bindtap='tapLetter'>{{letter}}</text>
+    </block>
+  </view>
+  
+  <view class='modal-container' hidden='{{modalHidden}}' catchtap='hideModal'>
+    <view class='alumni-detail-modal' catchtap='throwTapEvent'>
+      <image src='../../res/icon/contacts01_c2d1f2.png' style='width:81rpx; height:81rpx'></image>
+      <text>lorem</text>
+    </view>
+  </view>
+</view>
+
+<view class='error-message-container' hidden='{{hideErrorPage}}' bindtap='refresh'>
+  <image class="refresh-icon" src='../../res/icon/refresh01_2c2c2c.png'></image>
+  <text class="error-msg">{{errorMessage}}</text>
+</view>

@@ -67,7 +67,7 @@ def convert_to_json(work_table, start_index=None, file_name=None, template=None)
 
             template['mail'] = work_table.cell(ri, 5).value
             template['address'] = work_table.cell(ri, 6).value
-            template['sex'] = get_sex(template['id'])
+            template['gender'] = get_sex(template['id'])
             template['start_letter'] = get_start_letter(template['name'][:1]).upper()
             info_list.append(template.copy())
 
@@ -102,11 +102,11 @@ def get_sex(alumni_id):
             return "Check Total List"
 
     if alumni_id in man_filter:
-        return "man"
+        return 0
     elif alumni_id in woman_filter:
-        return "woman"
+        return 1
     else:
-        return "unknown"
+        return 2
 
 
 def get_start_letter(name):
@@ -122,7 +122,7 @@ if __name__ == "__main__":
         "qq": "",
         "mail": "",
         "address": "",
-        "sex": "",
+        "gender": "",
         "start_letter": "",
     }
     convert_to_json(t, (2, 0), "alumni.json", info_template)

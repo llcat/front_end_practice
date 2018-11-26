@@ -35,5 +35,8 @@
         "selectedIconPath": "/res/icon/tree01_c2d1f2.png"
       }
     ]
+  },
+  "networkTimeout": {
+    "request": 10000
   }
 }
