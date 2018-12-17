@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/agate.css" />
+  <link rel="icon" href="./assets/png/icon-32.png" />
+  <title>FW Add Tool</title>
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="operate-container">
+      <div id="app-header">
+        <div id="app-icon">
+          <img src="./assets/png/icon-64.png" />
+          <span>Fw Add Tool</span>
+        </div>
+        <div id="open-file">
+          <span>选择文件</span>
+          <img src="./assets/png/open-xml-64.png">
+        </div>
+      </div>
+      <div id="operate-file-path"></div>
+      <div id="declaration-selector"></div>
+      <div id="tool-box">
+        <div id="switch-multiple-operate" class="hidden">多平台添加</div>
+        <div id="multiple-operate-container">
+          <div id="multiple-selected-list"></div>
+          <div class="multiple-add-form">
+            <div class="form-field-set">
+              <div class="form-field">
+                <span>model:</span>
+                <input id="model-input" class="normal-text-input" type="text" placeholder="输入model" />
+                <img class="remove-input hidden" src="./assets/png/remove-32.png" />
+              </div>
+              <div class="form-field">
+                <span>fireware:</span>
+                <input id="fw-input" class="normal-text-input" name="fw" type="text" placeholder="输入fw" />
+                <img class="remove-input hidden" src="./assets/png/remove-32.png" />
+              </div>
+            </div>
+            <div class="form-field">
+              <button id="add-multiple-btn" class="normal-btn">add</button>
+            </div>
+          </div>
+        </div>
+        <div id="selected-container"></div>
+      </div>
+    </div>
+    <div id="preview-container">
+      <div id="preview-header">
+        <span>文本预览</span>
+        <div class="file-operate-container">
+          <button id="file-save" class="file-operate-btn">保存</button>
+          <button id="file-save-as" class="file-operate-btn">另存为</button>
+        </div>
+      </div>
+      <div id="xml-preview">
+        <pre><code class="language-xml"></code></pre>
+      </div>
+    </div>
+  </div>
+  <script>
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>

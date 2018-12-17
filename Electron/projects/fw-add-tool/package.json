@@ -1,0 +1,27 @@
+{
+  "name": "fw-add-tool",
+  "version": "1.0.0",
+  "description": "A tool used to add fw info",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --icon=assets/png/app-icon.ico"
+  },
+  "repository": "https://github.com/llcat/front_end_practice.git",
+  "keywords": [
+    "fw",
+    "xml"
+  ],
+  "author": "pino",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.7",
+    "electron-packager": "^13.0.0",
+    "electron-winstaller": "^2.7.0"
+  },
+  "dependencies": {
+    "xml-js": "^1.6.8",
+    "highlight.js": "^9.13.1",
+    "crlf": "^1.1.1"
+  }
+}
