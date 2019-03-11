@@ -1,3 +1,5 @@
 *.xls
 generate_alumni/*.json
 generate_alumni/.idea/
+**/.idea
+Html/intro/.idea

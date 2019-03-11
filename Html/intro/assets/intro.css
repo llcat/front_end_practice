@@ -1,0 +1,89 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(51, 49, 49);
+}
+
+
+.enter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32vw;
+    height: 32vw;
+}
+
+.circle-wave {
+    border: 0 transparent solid;
+    border-radius: 50%;
+    transition: .2s linear;
+}
+
+.enter-container:hover .cw0{
+    border: 1vmin rgba(255, 255, 255, 0.75) solid;
+}
+
+.enter-container:hover .cw1{
+    border: 1vmin rgba(255, 255, 255, 0.5) solid;
+}
+
+.enter-container:hover .cw2{
+    border: 1vmin rgba(255, 255, 255, 0.25) solid;
+}
+
+.enter-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 5vmin;
+    background-color: white;
+    color: black;
+}
+
+.enter-icon {
+    width: 40%;
+}
+
+.enter-title {
+    display: block;
+    font-size: 3vmin;
+    margin-top: 6%;
+}
+
+.info-box {
+
+}
+
+.enter-description {
+
+}
+
+@media screen and (max-width: 444px){
+    .enter-container {
+        width: 67vw;
+    }
+    .enter-link {
+        width: 35vw;
+        height: 35vw;
+    }
+    .enter-title {
+        font-size: 6vmin;
+    }
+}
+
+
