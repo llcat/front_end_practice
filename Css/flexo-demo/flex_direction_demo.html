@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex_direction_demo</title>
+    <style type="text/css">
+        div{
+            display: flex;
+            margin-bottom: 3%;
+            border: 1px solid gray;
+        }
+        div span{
+            color: white;
+            background: deepskyblue;
+            margin: 1%;
+            padding: 2%;
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+        }
+        .v-row{
+            flex-direction: row;
+        }
+        .v-row-reverse{
+            flex-direction: row-reverse;
+        }
+        .v-column{
+            flex-direction: column;
+        }
+        .v-column-reverse{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h2>设置flex-direction:row</h2>
+    <div class="v-row">
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+    </div>
+    <h2>设置flex-direction:row-reverse</h2>
+    <div class="v-row-reverse">
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+    </div>
+    <h2>设置flex-direction:column</h2>
+    <div class="v-column">
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+    </div>
+    <h2>设置flex-direction:column-reverse</h2>
+    <div class="v-column-reverse">
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+    </div>
+</body>
+</html>
