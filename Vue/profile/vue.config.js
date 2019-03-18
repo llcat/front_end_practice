@@ -1,3 +1,5 @@
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+
 module.exports = {
     css: {
         loaderOptions: {
@@ -5,5 +7,10 @@ module.exports = {
                 data: `@import "@/styles/variables.scss";`
             }
         }
+    },
+    configureWebpack: {
+        plugins: [
+            new VuetifyLoaderPlugin()
+        ]
     }
 }
