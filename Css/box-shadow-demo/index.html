@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>box shadow demo</title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <p>box-shadow: offset-x | offset-y | blur-radius | spread-radius | color</p>
+        <div class="container">
+            <p>offset-x:box's width 100px, shadow's offset-x 100px</p>
+            <div class="box offsetx">
+                box
+            </div>
+            <p>offset-y:box's width 100px, shadows's offset-y 100px</p>
+            <div class="box offsety">
+                box
+            </div>
+            <p class="margin-top">blur-radius:box's width 100px, shadows's offset-x 0, offset-y:0, blur-radius:50px, spread-radius:0px;</p>
+            <div class="box blur">
+                box
+            </div>
+            <p class="margin-top">blur-radius:box's width 100px, shadows's offset-x 0, offset-y:0, blur-radius:0px, spread-radius:50px;</p>
+            <div class="box spread">
+                box
+            </div>
+            <p class="margin-top">blur-radius:box's width 100px, shadows's offset-x 0, offset-y:0, blur-radius:20px, spread-radius:50px;</p>
+            <div class="box blur-spread">
+                box
+            </div>
+            <p class="margin-top">blur-radius:box's width 100px, shadows's offset-x 1px, offset-y 1px, blur-radius:3px, spread-radius:2px;</p>
+            <div class="box normal">
+                box
+            </div>
+            <p class="margin-top">blur-radius:box's width 100px, box-shadow:inset</p>
+            <div class="box inset-shadow">
+                box
+            </div>
+            <p class="margin-top">blur-radius:box's width 100px, multiple-shadow, use ',' split</p>
+            <div class="box multiple-shadow">
+                box
+            </div>
+        </div>
+    </body>
+</html>

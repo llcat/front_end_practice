@@ -1,16 +1,20 @@
 <template>
-  <div class="home">
-    <NavBar></NavBar>
-  </div>
+    <div>
+        test
+        <nav-bar></nav-bar>
+    </div>
 </template>
 
 <script>
-
-import NavBar from "../components/NavBar";
-export default {
-  name: 'home',
-  components: {
-      NavBar
-  }
-}
+    import NavBar from '../components/NavBar';
+    export default {
+        name: "Home",
+        components: {
+            NavBar,
+        }
+    }
 </script>
+
+<style scoped>
+
+</style>

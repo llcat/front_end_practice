@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background: #6b98b6;
+}
+
+.offsetx {
+    box-shadow: 100px 0px 0px 0px gray;
+    /* 可简写为 100px 0px gray */
+}
+
+.margin-top {
+    margin-top: 110px;
+}
+.offsety {
+    box-shadow: 0px 100px 0px 0px gray;
+}
+
+.blur {
+    box-shadow: 0px 0px 50px 0px gray;
+}
+
+.spread {
+    margin: 50px 0;
+    box-shadow: 0px 0px 0px 50px gray;
+}
+
+.blur-spread {
+    margin: 50px 0;
+    box-shadow: 0px 0px 20px 50px gray;
+}
+
+.normal {
+    box-shadow: 1px 1px 3px 2px gray;
+}
+
+.inset-shadow {
+    box-shadow: 0px 0px 0px 30px gray inset;
+}
+
+.multiple-shadow {
+    margin: 100px 0;
+    box-shadow: 0px -100px 20px  gray, 
+                100px 0px 20px  red,
+                0px 100px 20px  green,
+                -100px 0px 20px blue;
+}
