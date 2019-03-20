@@ -46,7 +46,23 @@
         <div id="app-7">
             <todo-item v-for="todo in todos" v-bind:key="todo.id" v-bind:todo="todo"></todo-item>
         </div>
+        <div class="split"></div>
+        <div id="app-8">
+            <p>{{message}}</p>
+            <button @click="handleClick">click me</button>
+        </div>
+        <div class="split"></div>
+        <div id="app-9">
+            <p>
+                Ask a yes or no question?
+                <input type="text" v-model="question" >
+            </p>
+            <p>{{answer}}</p>
+            <img :src="answerImg" />
+        </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./index.js"></script>
 </html>

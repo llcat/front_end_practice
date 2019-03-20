@@ -1,6 +1,5 @@
 <template>
-    <div>
-        test
+    <div id="home-page">
         <nav-bar></nav-bar>
     </div>
 </template>
@@ -15,6 +14,8 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    #home-page {
 
+    }
 </style>
