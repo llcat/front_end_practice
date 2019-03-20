@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8" >
+        <meta name="viewport"  content="width=device-width,initial-scale=1.0">
+        <title>touch event</title>
+        <style type="text/css">
+            body {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+            }
+            #touch-demo {
+                width: 20vmin;
+                height: 20vmin;
+                background: #3d3d3d;
+                transition: .3s;
+            }
+            @media screen and (min-width:768px){
+                #touch-demo:hover {
+                    background: #aa3344;
+                    transform: rotateY(60deg)
+                }   
+            }
+
+            .animation-rotate {
+                background: #aa3344;
+                transform: rotateY(60deg)
+            }
+        </style>
+    </head>
+    <body>
+        <div id="touch-demo">
+            
+        </div>
+    </body>
+    <script type="" src="./index.js"></script>
+</html>

@@ -22,5 +22,6 @@
     width: 25vw;
     height: 10vh;
     box-shadow: 1px 2px #3f3f3f;
+
 }
 </style>

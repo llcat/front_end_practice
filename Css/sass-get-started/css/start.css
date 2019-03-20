@@ -1,0 +1,53 @@
+div {
+  display: flex;
+  background: #333;
+}
+
+/* Variables */
+body {
+  font: 100% Helvetica sans-serif;
+  background: #333;
+}
+
+/* Nesting */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* Mixins */
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/* Extend/Inheritance */
+.warning, .error, .success, .message {
+  border: 1px solid #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+/*# sourceMappingURL=start.css.map */

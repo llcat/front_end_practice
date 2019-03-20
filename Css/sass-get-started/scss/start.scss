@@ -1,0 +1,72 @@
+@import './_partial';
+
+/* Variables */
+$font-stack: Helvetica sans-serif;
+$primary-color: #333;
+
+body {
+    font: 100% $font-stack;
+    background: $primary-color;
+}
+
+/* Nesting */
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+/* Mixins */
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property
+}
+
+.box {
+    @include transform(rotate(30deg));
+}
+
+/* Extend/Inheritance */
+%message-shared {
+    border: 1px solid #333;
+    padding: 10px;
+    color: #fff;
+}
+
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message {
+    @extend %message-shared;
+}
+
+.success {
+    @extend %message-shared;
+    border-color: green;
+}
+
+.error {
+    @extend %message-shared;
+    border-color: red;
+}
+
+.warning {
+    @extend %message-shared;
+    border-color: yellow;
+}
