@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Responsive Nav</title>
+</head>
+<body>
+    <header>
+        Responsive Menu Website
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Shop</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul>
+        <div class="menu">Menu</div>
+    </nav>
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium voluptas est quidem, neque esse rem, fugiat tenetur aperiam sapiente earum, nemo minus laboriosam quam consequatur deleniti reprehenderit possimus? Suscipit, voluptates!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum praesentium facilis, nobis quidem cumque quasi dolorum beatae dolorem blanditiis vitae porro veniam officia id ullam neque delectus facere laborum?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia, esse voluptates quisquam nemo inventore necessitatibus autem a sunt illum hic, dolore perspiciatis porro exercitationem odit ad. Corrupti, repellat cupiditate?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel aspernatur recusandae dolor officia veniam sunt, nostrum impedit odio nobis. Minus veritatis ab in autem illo tempore ut eveniet harum.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit, adipisci quod pariatur totam ratione, voluptas ipsa doloribus, aliquid earum reiciendis impedit aut sunt ipsum rem repellat ex minima magnam.
+    </section>
+    <script type="text/javascript">
+        document.querySelector(".menu").addEventListener("click", ()=>{
+            console.log("click")
+            console.log(document.querySelector(".menu").classList)
+            document.querySelector('ul').classList.toggle("showing")
+        })
+    </script>
+</body>
+</html>
