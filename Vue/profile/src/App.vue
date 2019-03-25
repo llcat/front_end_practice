@@ -8,6 +8,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: $primary-color;
+  font: {
+    family: Helvetica, sans-serif;
+  }
 }
 </style>

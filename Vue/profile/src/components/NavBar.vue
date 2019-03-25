@@ -29,17 +29,17 @@
                     },
                     {
                         id: 2,
-                        imgSrc: require("@/assets/img/tech.png"),
+                        imgSrc: require("@/assets/img/skill.png"),
                         text: "职业技能"
                     },
                     {
                         id: 3,
-                        imgSrc: require("@/assets/img/workexperience.png"),
+                        imgSrc: require("@/assets/img/work_experience.png"),
                         text: "工作经历"
                     },
                     {
                         id: 4,
-                        imgSrc: require("@/assets/img/comment.png"),
+                        imgSrc: require("@/assets/img/personal_evaluation.png"),
                         text: "个人评价"
                     }
                 ]
