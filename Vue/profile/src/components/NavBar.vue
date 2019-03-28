@@ -6,7 +6,7 @@
 -->
 <template>
     <nav class="nav-container">
-        <nav-item v-for="item in items" :imgSrc="item.imgSrc" :text="item.text" :key="item.id">
+        <nav-item class="nav-item" v-for="item in items" :imgSrc="item.imgSrc" :text="item.text" :key="item.id">
         </nav-item>
     </nav>
 </template>
@@ -52,15 +52,27 @@
 .nav-container {
     box-shadow: 2px 3px 4px rgba(102, 102, 102, 0.7);
     position: absolute;
-    top: 50%;
-    left: 2%;
-    transform: translateY(-50%);
     @media screen and (min-width: 320px) {
+        display: flex;
+        flex-direction: row;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
 
+        .nav-item {
+            padding: 0 3vmin;
+        }
     }
 
     @media screen and (min-width: 768px) {
-
+        display: flex;
+        flex-direction: column;
+        bottom: 50%;
+        left: 2%;
+        transform: translateY(50%);
+        .nav-item {
+            padding: 0 2vmin 0 0;
+        }
     }
 }
 </style>

@@ -1,10 +1,15 @@
 <template>
-    
+
 </template>
 
 <script>
+    import CommonTitle from '../components/CommonTitle';
+
     export default {
-        name: "PersonalInfo"
+        name: "PersonalInfo",
+        components: {
+            CommonTitle
+        }
     }
 </script>
 
