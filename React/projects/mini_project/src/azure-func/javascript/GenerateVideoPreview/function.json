@@ -1,0 +1,27 @@
+{
+    "bindings": [
+      {
+        "name": "videoBlob",
+        "type": "blobTrigger",
+        "direction": "in",
+        "path": "videos/{name}.{extension}",
+        "connection": "AZURE_STORAGE_CONNECTION_STRING",
+        "dataType": "binary"
+      },
+      {
+        "type": "blob",
+        "name": "videoPreview",
+        "path": "videos-preview/{name}.png",
+        "connection": "AZURE_STORAGE_CONNECTION_STRING",
+        "direction": "out"
+      },
+      {
+        "type": "blob",
+        "name": "streamableVideo",
+        "path": "videos/{name}.{extension}",
+        "connection": "AZURE_STORAGE_CONNECTION_STRING",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+  }

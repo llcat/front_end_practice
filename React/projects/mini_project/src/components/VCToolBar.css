@@ -1,0 +1,26 @@
+.vc-tool-bar{
+    display: flex;
+    font-size: 2.5vh;
+}
+
+.vc-watched {
+    margin: 0 0.8vw;
+}
+
+.vc-favorite {
+    margin: 0 0.8vw;
+}
+
+.vc-sync {
+    margin: 0 0.8vw;
+}
+
+.vc-favorite:hover {
+    cursor: pointer;
+    color: red
+}
+
+.vc-delete {
+    cursor: pointer;
+    margin: 0 0.8vw;
+}

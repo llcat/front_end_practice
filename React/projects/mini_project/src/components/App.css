@@ -1,0 +1,16 @@
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    min-height: 92vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    min-height: 92vh;
+}

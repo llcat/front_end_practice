@@ -1,0 +1,34 @@
+{
+    "bindings": [
+      {
+        "authLevel": "anonymous",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req"
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "res"
+      },
+      {
+        "type": "documentDB",
+        "name": "users",
+        "databaseName": "testdb",
+        "collectionName": "users",
+        "sqlQuery": "select * from c order by c._ts desc",
+        "connection": "pino-db_DOCUMENTDB",
+        "direction": "in"
+      },
+      {
+        "type": "documentDB",
+        "name": "$return",
+        "databaseName": "testdb",
+        "collectionName": "users",
+        "createIfNotExists": false,
+        "connection": "pino-db_DOCUMENTDB",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+  }
