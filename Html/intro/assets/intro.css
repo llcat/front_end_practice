@@ -80,6 +80,7 @@ body {
     height: 100%;
     transform-style: preserve-3d;
     transform: perspective(100vw);
+    overflow: hidden;
 }
 
 .bg:before {
@@ -106,6 +107,7 @@ body {
     position: absolute;
     background: #fff;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     animation-name: rotate-y;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
