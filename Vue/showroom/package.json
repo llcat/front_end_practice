@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "element-ui": "^2.4.5",
+    "swiper": "^4.5.0",
     "vue": "^2.6.6"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.2",
