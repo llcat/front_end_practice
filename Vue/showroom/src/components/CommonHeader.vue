@@ -34,8 +34,8 @@
     background: linear-gradient(90deg, rgba(255, 14, 70, 0.8), rgb(40, 117, 245));
 
     .icon-container {
-        width: 10vmin;
-        height: 10vmin;
+        width: 8vmin;
+        height: 8vmin;
         @include flex-center;
         border-radius: 50%;
         background: white;
