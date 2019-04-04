@@ -41,6 +41,9 @@
                     },
                 })
             }
+            document.addEventListener("click", (e)=>{
+                console.dir(e)
+            })
         },
 
         methods: {
@@ -55,7 +58,7 @@
 
 <style lang="scss" scoped>
     @import "~swiper/dist/css/swiper.min.css";
-    @mixin media-mobile
+    
     .project-swiper {
         display: inline-flex;
         position: relative;
