@@ -32,6 +32,7 @@
 
 <style scoped lang="scss">
     .project-intro {
+        background: aliceblue;
         display: inline-flex;
         flex-direction: column;
         border: 1px dashed gray;

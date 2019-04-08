@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #row , #col{
+            display: flex;
+        }
+        #row {
+            overflow: visible
+        }
+        #col {
+            flex-direction: column;
+        }
+
+        .box {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+            min-height: 100px;
+            border-bottom: 1px solid gray;   
+            border-right: 1px solid gray;   
+        }
+    </style>
+</head>
+<body>
+    <div id="row"></div>
+    <div id="col"></div>
+</body>
+<script type="text/javascript">
+let rowContainer = document.querySelector("#row")
+let columnContainer = document.querySelector("#col")
+
+function addBox(amount){
+    let rowBoxes = ""
+    let colBoxes = ""
+    for(let i=0; i<amount; i++) {
+        rowBoxes += `<div class="box">${i*100}px</div>`
+        colBoxes += `<div class="box">${(i+1)*100}px</div>`
+    }
+
+    rowContainer.innerHTML = rowBoxes;
+    columnContainer.innerHTML = colBoxes;
+}
+addBox(15)
+document.addEventListener("click", (e)=>{
+    alert(`window.pageXOffset:${window.pageXOffset}\nwindow.pageYOffset:${window.pageYOffset}`)
+})
+</script>
+</html>
