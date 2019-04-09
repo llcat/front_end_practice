@@ -36,6 +36,14 @@
                     init: true,
                     slidesPerView: 1,
                     speed: 400,
+                    effect: 'coverflow',
+                    coverflowEffect: {
+                        rotate: 30,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows : false,
+                    },
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true
@@ -62,10 +70,7 @@
         display: inline-flex;
         position: relative;
         flex-direction: row;
-        border-radius: 0 0 2vmin 2vmin ;
         background: rgba(240, 248, 255, 0.4);
-        width: 100%;
-        padding: 2vmin;
     }
 
     .swiper-container {
@@ -79,16 +84,21 @@
         background: aliceblue;
         display: flex;
         align-items: center;
-        /*margin: 1vmin;*/
+        justify-content: center;
         box-sizing: border-box;
         border-radius: 3vmin;
-        /*box-shadow: 1px 1px 2px 1px rgba(185, 185, 185, 0.96);*/
     }
 
-    @media (max-width: 767px){
-        project-swiper {
-
+    @media (max-width: 767px) {
+        .project-swiper {
+            width: 100%;
+            border-radius: 0 0 2vmin 2vmin;
         }
+
+        .swiper-wrapper {
+            height: 33vh;
+        }
+
         .swiper-container {
             width: 85vw;
             height: 38vh;
@@ -106,20 +116,29 @@
         }
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
+        .project-swiper {
+            justify-content: center;
+            align-items: center;
+            height: 88vh;
+            border-radius: 0 3vmin 3vmin 0;
+        }
+
+        .swiper-wrapper {
+            align-items: center;
+            height: 36vh !important;
+        }
+
         .swiper-container {
             width: 40vw;
-            height: 38vh;
         }
-
         .swiper-slide {
             width: 35vw;
-            height: 30vh;
+            height: 36vh !important;
         }
-
         .swiper-pagination {
             top: 50%;
-            left: 0;
+            left: 2%;
             transform: translateY(-50%);
         }
     }

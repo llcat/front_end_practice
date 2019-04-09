@@ -1,6 +1,6 @@
 <template>
     <div class="project-intro">
-        <h3 class="project-name">{{projectInfo.name}}</h3>
+        <h3 class="project-name"><a :href="projectInfo.link" target="_blank">{{projectInfo.name}}</a><img src="../assets/link.png"></h3>
         <p class="project-info">{{projectInfo.info}}</p>
         <p>powered by:</p>
         <div class="skill-box">
@@ -45,7 +45,15 @@
         }
 
         .project-name {
-            margin: 1vmin 0 1vmin 1vmin
+            margin: 1vmin 0 1vmin 1vmin;
+            display: flex;
+            align-items: center;
+            a {
+                color: black;
+            }
+            img {
+                width: 20px;
+            }
         }
 
         .project-info {

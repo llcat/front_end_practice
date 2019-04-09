@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        html, body, h2 {
+            padding: 0;
+            margin: 0;
+        }
+        html {
+            box-sizing: border-box;
+            width: 200px;
+            height: 800px;
+            border: 1px solid gray
+        }
+
+    </style>
+</head>
+<body>
+    <h2>test</h2>
+    <p class="msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, pariatur saepe repudiandae ducimus alias, praesentium quasi neque tenetur consequuntur necessitatibus sequi dolorem? Iure doloribus, culpa delectus consectetur facere excepturi non.</p>
+    <p class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est autem quidem hic? Quae repellat quaerat tempora fugiat in. Odit dolore culpa eligendi maxime neque ducimus, quisquam totam ab recusandae porro!</p>
+    <p class="msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eos quasi dolor quis minima ut porro suscipit reprehenderit, ratione voluptatum tenetur neque? A officia, deleniti quae repellat debitis modi error.</p>
+</body>
+<script type="text/javascript">
+    document.addEventListener("click",(e)=>{
+        // viewport dimensions
+        alert(`documentElement.clientWidth:${document.documentElement.clientWidth}\ndocumentElement.clientHeight:${document.documentElement.clientHeight}`)
+        // html dimensions
+        alert(`documentElement.offsetWidth:${document.documentElement.offsetWidth}\ndocumentElement.offsetHeight:${document.documentElement.offsetHeight}`)
+    })
+</script>
+</html>

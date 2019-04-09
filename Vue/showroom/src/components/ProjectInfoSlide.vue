@@ -39,14 +39,10 @@
         .info-container {
             width: 60%;
             margin: 2%;
+            h4 {
+                margin: 0.5vmin 0;
+            }
         }
 
-        @media (max-width: 767px) and (max-aspect-ratio: 1/1){
-
-        }
-
-        @media (min-width: 768px) and (min-aspect-ratio: 1/1){
-
-        }
     }
 </style>
