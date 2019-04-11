@@ -34,22 +34,40 @@ const KEY_OP_SQRT = 216;
 const KEY_OP_FACTORIAL = 217;
 const KEY_OP_DEVIDE_BY_ONE = 218;
 
-
 // function key 3xx
 const KEY_FUNC_AC = 300;
 const KEY_FUNC_DELETE = 301;
 const KEY_FUNC_TRANSFORM = 302;
 
-// layout 4*5
+// key definition
+const keyDefinition = {
+    KEY_VAL_0: KEY_VAL_0, KEY_VAL_1: KEY_VAL_1, KEY_VAL_2: KEY_VAL_2, KEY_VAL_3: KEY_VAL_3,
+    KEY_VAL_4: KEY_VAL_4, KEY_VAL_5: KEY_VAL_5, KEY_VAL_6: KEY_VAL_6, KEY_VAL_7: KEY_VAL_7,
+    KEY_VAL_8: KEY_VAL_8, KEY_VAL_9: KEY_VAL_9, KEY_VAL_DOT: KEY_VAL_DOT, 
+    KEY_VAL_EULER: KEY_VAL_EULER,KEY_VAL_PI: KEY_VAL_PI, 
+    KEY_OP_PLUS: KEY_OP_PLUS, KEY_OP_MINUS: KEY_OP_MINUS, 
+    KEY_OP_MULTIPLY: KEY_OP_MULTIPLY, KEY_OP_DIVIDE: KEY_OP_DIVIDE, 
+    KEY_OP_2ND: KEY_OP_2ND, KEY_OP_DEG: KEY_OP_DEG, 
+    KEY_OP_SIN: KEY_OP_SIN,  KEY_OP_COS: KEY_OP_COS, KEY_OP_TAN: KEY_OP_TAN,
+    KEY_OP_POWER: KEY_OP_POWER, KEY_OP_LG: KEY_OP_LG, 
+    KEY_OP_LN: KEY_OP_LN,  KEY_OP_LEFT_PARENTHESES: KEY_OP_LEFT_PARENTHESES,
+    KEY_OP_RIGHT_PARENTHESES: KEY_OP_RIGHT_PARENTHESES,
+    KEY_OP_SQRT: KEY_OP_SQRT, KEY_OP_FACTORIAL: KEY_OP_FACTORIAL,
+    KEY_OP_DEVIDE_BY_ONE: KEY_OP_DEVIDE_BY_ONE, 
+    KEY_FUNC_AC: KEY_FUNC_AC, KEY_FUNC_DELETE: KEY_FUNC_DELETE, 
+    KEY_FUNC_TRANSFORM: KEY_FUNC_TRANSFORM
+}
+
+// layout 4*5 for simple calculator
 const basicKeyLayout = [
     [KEY_FUNC_AC, KEY_FUNC_DELETE, KEY_OP_PERCENT, KEY_OP_DIVIDE],
     [KEY_VAL_7, KEY_VAL_8, KEY_VAL_9, KEY_OP_MULTIPLY],
     [KEY_VAL_4, KEY_VAL_5, KEY_VAL_6, KEY_OP_MINUS],
     [KEY_VAL_1, KEY_VAL_2, KEY_VAL_3, KEY_OP_PLUS],
     [KEY_FUNC_TRANSFORM, KEY_VAL_0, KEY_VAL_DOT, KEY_OP_EQUAL]
-]
+];
 
-// layout 5*7
+// layout 5*7 for advanced calculator
 const advancedKeyLayout = [
     [KEY_OP_2ND, KEY_OP_DEG, KEY_OP_SIN, KEY_OP_COS, KEY_OP_TAN],
     [KEY_OP_POWER, KEY_OP_LG, KEY_OP_LN, KEY_OP_LEFT_PARENTHESES, KEY_OP_RIGHT_PARENTHESES],
@@ -58,7 +76,7 @@ const advancedKeyLayout = [
     [KEY_OP_DEVIDE_BY_ONE, KEY_VAL_4, KEY_VAL_5, KEY_VAL_6, KEY_OP_MINUS],
     [KEY_VAL_PI, KEY_VAL_1, KEY_VAL_2, KEY_VAL_3, KEY_OP_PLUS],
     [KEY_FUNC_TRANSFORM, KEY_VAL_EULER, KEY_VAL_0, KEY_VAL_DOT, KEY_OP_EQUAL]
-]
+];
 
 let keyProps = {
     [KEY_VAL_0]: {
@@ -74,7 +92,7 @@ let keyProps = {
     [KEY_VAL_2]: {
         id: KEY_VAL_2,
         type: "val",
-        text: "2"
+        text: "2",
     },
     [KEY_VAL_3]: {
         id: KEY_VAL_3,
@@ -89,7 +107,7 @@ let keyProps = {
     [KEY_VAL_5]: {
         id: KEY_VAL_5,
         type: "val",
-        text: "5"
+        text: "5",
     },
     [KEY_VAL_6]: {
         id: KEY_VAL_6,
@@ -99,7 +117,7 @@ let keyProps = {
     [KEY_VAL_7]: {
         id: KEY_VAL_7,
         type: "val",
-        text: "7"
+        text: "7",
     },
     [KEY_VAL_8]: {
         id: KEY_VAL_8,
@@ -115,6 +133,11 @@ let keyProps = {
         id: KEY_VAL_DOT,
         type: "val",
         text: "."
+    },
+    [KEY_VAL_PI]: {
+        id: KEY_VAL_PI,
+        type: "val",
+        text: "п"
     },
     [KEY_VAL_EULER]: {
         id: KEY_VAL_EULER,
@@ -201,19 +224,47 @@ let keyProps = {
         type: "op",
         text: ")"
     },
-    [KEY_OP_LG]: {
-        id: KEY_OP_LG,
+    [KEY_OP_SQRT]: {
+        id: KEY_OP_SQRT,
         type: "op",
-        text: "lg"
+        text: "√X"
     },
-    [KEY_OP_LN]: {
-        id: KEY_OP_LN,
+    [KEY_OP_FACTORIAL]: {
+        id: KEY_OP_FACTORIAL,
         type: "op",
-        text: "ln"
+        text: "X!"
     },
-    [KEY_OP_LEFT_PARENTHESES]: {
-        id: KEY_OP_LEFT_PARENTHESES,
+    [KEY_OP_DEVIDE_BY_ONE]: {
+        id: KEY_OP_DEVIDE_BY_ONE,
         type: "op",
-        text: "("
+        text: "1/X"
     },
+    [KEY_FUNC_TRANSFORM]: {
+        id: KEY_FUNC_TRANSFORM,
+        type: "func",
+        img: require("@/assets/img/key_transform.png")
+    },
+    [KEY_FUNC_AC]: {
+        id: KEY_FUNC_TRANSFORM,
+        type: "func",
+        text: "AC"
+    },
+    [KEY_FUNC_DELETE]: {
+        id: KEY_FUNC_DELETE,
+        type: "func",
+        img: require("@/assets/img/key_delete.png")
+    }
 }
+
+
+const basicKeyboard = basicKeyLayout.map(row => row.map(keyId => keyProps[keyId]));
+const advancedKeyboard = advancedKeyLayout.map(row => row.map(keyId => keyProps[keyId]));
+
+console.dir(basicKeyboard)
+
+export {
+    keyDefinition,
+    basicKeyboard,
+    advancedKeyboard
+}
+

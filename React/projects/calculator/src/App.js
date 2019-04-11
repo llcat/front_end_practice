@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Calculator from './components/Calculator'
 
+import './App.less'
+
 class App extends Component {
   render() {
     return (

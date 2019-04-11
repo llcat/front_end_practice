@@ -1,9 +1,26 @@
-.app {
+@import './index.css';
+
+@min500: ~"(min-width: 500px)";
+
+// 弹性盒子, 水平垂直居中
+.flex-hv-center() {
     display: flex;
-    align-content: center
+    align-items: center;
+    justify-content: center;
 }
 
-.main-container {
-    display: flex;
-    align-content: center
+.app {
+
+    .flex-hv-center();
+    .main-container {
+        width: 100vw;
+        .flex-hv-center()
+    }
+
+    @media @min500 {
+        .main-container {
+            width: 450px;
+            background: gray;
+        }
+    }
 }
