@@ -52,7 +52,7 @@
 .nav-container {
     box-shadow: 2px 3px 4px rgba(102, 102, 102, 0.7);
     position: absolute;
-    @media screen and (min-width: 320px) {
+    @media (orientation: portrait) {
         display: flex;
         flex-direction: row;
         bottom: 2%;
@@ -64,7 +64,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media (orientation: landscape) {
         display: flex;
         flex-direction: column;
         bottom: 50%;

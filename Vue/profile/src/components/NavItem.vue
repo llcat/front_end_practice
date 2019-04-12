@@ -21,7 +21,7 @@
         background: #c0d2f0;
         cursor: pointer;
     }
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media (orientation: portrait) {
         .nav-item-icon {
             width: 5vw;
             margin: 2vmin;
@@ -31,13 +31,13 @@
         }
     }
 
-    @media screen and (min-width: 768px){
+    @media (orientation: landscape){
         .nav-item-icon {
-            width: 5vmin;
-            margin: 2vmin;
+            width: 4vmin;
+            margin: 1vmin 2vmin;
         }
         .nav-item-text {
-            font-size: 3vmin;
+            font-size: 2vmin;
             margin-right: 2vmin;
         }
     }

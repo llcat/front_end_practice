@@ -1,19 +1,18 @@
 <template>
     <div id="home-page">
+        <not-complete></not-complete>
         <nav-bar></nav-bar>
-        <common-title decoration-type="image" text="test"></common-title>
-        <common-title decoration-type="image" text="test1"></common-title>
     </div>
 </template>
 
 <script>
+    import NotComplete from '../components/NotComplete';
     import NavBar from '../components/NavBar';
-    import CommonTitle from '../components/CommonTitle'
     export default {
         name: "Home",
         components: {
+            NotComplete,
             NavBar,
-            CommonTitle
         }
     }
 </script>
@@ -21,5 +20,9 @@
 <style scoped lang="scss">
     #home-page {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
     }
 </style>

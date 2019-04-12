@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function Key() {
+export default function Key(props) {
+
   return (
-    <div>
+    <div className="key-btn">
       
     </div>
   )
