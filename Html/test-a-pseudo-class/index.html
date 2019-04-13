@@ -18,11 +18,19 @@
     <!-- 无href,不会显示link和visited的样式 -->
     <a>no href</a>
     <br>
-    <!-- href 为""时使用visited的样式 -->
-    <a href="http://llcat.tech">href is http://llcat.tech</a><br>
+
+    <!-- 特例：href为""时会先显示visited的样式 -->
     <a href="">href is ""</a><br>
+
+    <!-- 
+        没访问前都是link样式
+        chrome中是根据历史记录来确定是link还是visited样式的。
+     -->
+    <a href="http://llcat.tech">href is http://llcat.tech</a><br>
     <a href="#">href is #</a><br>
     <a href="#/">href is #/</a><br>
-    <a href="/test/test.html"href is /test/test.html></a>
+    <a href="#test">href is #test</a><br>
+    <a href="/test/test.html">href is /test/test.html</a><br>
+    <a href="javascript:alert(0)">href is javascript:alert(0)</a><br>
 </body>
 </html>
