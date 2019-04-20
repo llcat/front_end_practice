@@ -1,9 +1,26 @@
-import React, {} from 'react'
+import React from 'react';
+import Key from './Key';
+import {
+  basicKeyboard, 
+  advancedKeyboard, 
+  keyDefinition
+} from '../config/key.config';
 
-export default function KeyBoard() {
+import './KeyBoard.less';
+
+const generateKeyBoard = (config) => {
+  const keyBoard = config.map(row => (
+      <div className="key-board-row">
+        { row.map(key => <Key key={key.id} keyProps={key}/>) }
+      </div>
+    ));
+  return keyBoard;
+}
+
+export default function KeyBoard(props) {
   return (
-    <div>
-      
+    <div className="key-board">
+      {generateKeyBoard(advancedKeyboard)}
     </div>
   )
 }

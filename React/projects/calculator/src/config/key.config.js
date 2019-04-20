@@ -202,7 +202,7 @@ let keyProps = {
     [KEY_OP_POWER]: {
         id: KEY_OP_POWER,
         type: "op",
-        text: "X^y"
+        text: "X<sup>y</sup>"
     },
     [KEY_OP_LG]: {
         id: KEY_OP_LG,
@@ -242,7 +242,7 @@ let keyProps = {
     [KEY_FUNC_TRANSFORM]: {
         id: KEY_FUNC_TRANSFORM,
         type: "func",
-        img: require("@/assets/img/key_transform.png")
+        img: require("../assets/img/key_transform.png")
     },
     [KEY_FUNC_AC]: {
         id: KEY_FUNC_TRANSFORM,
@@ -252,15 +252,12 @@ let keyProps = {
     [KEY_FUNC_DELETE]: {
         id: KEY_FUNC_DELETE,
         type: "func",
-        img: require("@/assets/img/key_delete.png")
+        img: require("../assets/img/key_delete.png")
     }
 }
 
-
 const basicKeyboard = basicKeyLayout.map(row => row.map(keyId => keyProps[keyId]));
 const advancedKeyboard = advancedKeyLayout.map(row => row.map(keyId => keyProps[keyId]));
-
-console.dir(basicKeyboard)
 
 export {
     keyDefinition,
