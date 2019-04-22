@@ -20,7 +20,7 @@ const generateKeyBoard = (config) => {
 export default function KeyBoard(props) {
   return (
     <div className="key-board">
-      {generateKeyBoard(advancedKeyboard)}
+      {generateKeyBoard(basicKeyboard)}
     </div>
   )
 }
