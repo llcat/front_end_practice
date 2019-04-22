@@ -47,6 +47,7 @@ const keyDefinition = {
     KEY_VAL_EULER: KEY_VAL_EULER,KEY_VAL_PI: KEY_VAL_PI, 
     KEY_OP_PLUS: KEY_OP_PLUS, KEY_OP_MINUS: KEY_OP_MINUS, 
     KEY_OP_MULTIPLY: KEY_OP_MULTIPLY, KEY_OP_DIVIDE: KEY_OP_DIVIDE, 
+    KEY_OP_EQUAL: KEY_OP_EQUAL, KEY_OP_PERCENT: KEY_OP_PERCENT,
     KEY_OP_2ND: KEY_OP_2ND, KEY_OP_DEG: KEY_OP_DEG, 
     KEY_OP_SIN: KEY_OP_SIN,  KEY_OP_COS: KEY_OP_COS, KEY_OP_TAN: KEY_OP_TAN,
     KEY_OP_POWER: KEY_OP_POWER, KEY_OP_LG: KEY_OP_LG, 
@@ -137,7 +138,7 @@ let keyProps = {
     [KEY_VAL_PI]: {
         id: KEY_VAL_PI,
         type: "val",
-        text: "п"
+        img: require('../assets/img/key_pi.png')
     },
     [KEY_VAL_EULER]: {
         id: KEY_VAL_EULER,
@@ -167,7 +168,8 @@ let keyProps = {
     [KEY_OP_EQUAL]: {
         id: KEY_OP_EQUAL,
         type: "op",
-        text: "="
+        text: "=",
+        className: "key-equal"
     },
     [KEY_OP_PERCENT]: {
         id: KEY_OP_PERCENT,
@@ -247,7 +249,8 @@ let keyProps = {
     [KEY_FUNC_AC]: {
         id: KEY_FUNC_TRANSFORM,
         type: "func",
-        text: "AC"
+        text: "AC",
+        className: "key-ac"
     },
     [KEY_FUNC_DELETE]: {
         id: KEY_FUNC_DELETE,

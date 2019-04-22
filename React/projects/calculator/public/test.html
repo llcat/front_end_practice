@@ -11,10 +11,25 @@
             height: 50px;
             background: gray;
         }
+
+        .one-pixel {
+            height: 200px;
+        }
+
+        .one-pixel::before {
+            content: "";
+            width: 1px;
+            background-color: gray;
+            height: 100%;
+            transform: scaleY(0.5)
+        }
     </style>
 </head>
 <body>
     <div class="aaa" style="background:black">
+
+    </div>
+    <div class="one-pixel">
 
     </div>
 </body>

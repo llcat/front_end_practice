@@ -2,12 +2,42 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin: 20px;
     .key-board-row {
         display: flex;
+        box-sizing: border-box;
+        position: relative;
+        // border-top: 1px solid #999;
+        // 一种使边框小于1px的解决方案。
+        &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            top: 0;
+            background-color: #999;
+            transform: scaleY(0.4)
+        }
+
         .key {
             min-width: 60px;
             min-height: 60px;
+            position: relative;
+            user-select: none;
+            // border-left: 1px solid #999;
+            &::before {
+                content: "";
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                background-color: #999;
+                transform: scaleX(0.4)
+            }
             flex-grow: 1;
+            &:first-child::before {
+                display: none;
+            }
             img {
                 max-width: 20px;
             }

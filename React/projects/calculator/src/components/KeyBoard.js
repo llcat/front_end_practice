@@ -9,8 +9,8 @@ import {
 import './KeyBoard.less';
 
 const generateKeyBoard = (config) => {
-  const keyBoard = config.map(row => (
-      <div className="key-board-row">
+  const keyBoard = config.map((row, index) => (
+      <div key={`row-${index}`} className="key-board-row">
         { row.map(key => <Key key={key.id} keyProps={key}/>) }
       </div>
     ));

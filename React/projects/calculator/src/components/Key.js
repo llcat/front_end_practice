@@ -2,25 +2,29 @@ import React from 'react'
 import './Key.less';
 import {keyDefinition} from '../config/key.config'
 
-
-const specialKey = (keyProps) => {
+const genKey = (keyProps) => {
   const keyId = keyProps.id;
-
-  if (keyId === keyDefinition.KEY_OP_POWER){
-    return (<span>X<sup>y</sup></span>)
-  }
-  else return <span>{keyProps.text}</span>
-}
-
-export default function Key(props) {
-  const keyProps = props.keyProps;
+  const keyClass = keyProps.className?`key ${keyProps.className}`:"key";
   const isIconKey = !!keyProps.img;
+  let iconKey, textKey = null;
+  if(isIconKey){
+    iconKey = <img src={keyProps.img} alt=""/>
+  }else{
+    if (keyId === keyDefinition.KEY_OP_POWER){
+      textKey = (<span>X<sup>y</sup></span>)
+    }else {
+      textKey = <span>{keyProps.text}</span>
+    }
+  }
   return (
-    <div className="key">
-      {isIconKey?<img src={keyProps.img} alt="" />:null}
-      {specialKey(keyProps)}
+    <div className={`${keyClass}`}>
+      {iconKey}
+      {textKey}
     </div>
   )
-
+}
+export default function Key(props) {
+  const keyProps = props.keyProps;
+  return genKey(keyProps)
 }
 
