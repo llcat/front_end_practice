@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>some attentions</title>
+</head>
+<body>
+    <div id="container">
+        <div id="d">This is a div</div>
+    </div>
+</body>
+<script>
+    var container = document.querySelector("#container");
+    var d = document.querySelector("#d")
+    // 设置了outerHTML,但是d引用的节点还在内存中。
+    d.outerHTML = "<p>This is a p tag</p>"
+    console.log(d.nodeName)
+    console.log(container.children[0].nodeName)
+</script>
+</html>

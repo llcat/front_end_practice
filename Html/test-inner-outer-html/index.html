@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Inner and Outer HTML</title>
+</head>
+<body>
+    <div id="aa">
+        aa
+        <p>bb</p>
+        <div id="pp">
+            <span>cc</span>
+        </div>
+    </div>
+</body>
+<script>
+    var pp = document.querySelector("#pp")
+    console.log("---innerHTML----")
+    console.log(pp.innerHTML)
+    console.log("---outerHTML----")
+    console.log(pp.outerHTML)
+    console.log("---innerText----")
+    console.log(pp.innerText)
+    console.log("---outerText----")
+    console.log(pp.outerText)
+
+    pp = document.querySelector("#aa")
+    console.log("---innerHTML----")
+    console.log(pp.innerHTML)
+    console.log("---outerHTML----")
+    console.log(pp.outerHTML)
+    console.log("---innerText----")
+    console.log(pp.innerText)
+    console.log("---outerText----")
+    console.log(pp.outerText)
+</script>
+</html>
